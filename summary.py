@@ -32,7 +32,7 @@ def get_youtube_transcript_docs(url: str):
 st.title("YT / Website Summarizer")
 
 # Your Groq API Key
-api_key = "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"
+api_key = st.secrets["GROQ_API_KEY"]
 
 # Setup LLM
 llm = ChatGroq(
